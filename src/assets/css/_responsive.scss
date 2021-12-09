@@ -1,0 +1,102 @@
+@media (max-width: 1440px) {
+    .bg {
+        &__infos {
+            p,
+            h1,
+            span {
+                padding-left: 55px;
+            }
+            p {
+                font-size: 32px;
+            }
+            h1 {
+                font-size: 64px;
+            }
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .bg {
+        &__image {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &__infos {
+            width: 100%;
+            clip-path: unset;
+        }
+        &__image {
+            img {
+                z-index: 99;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .bg {
+        &__image {
+            img {
+                max-width: 400px;
+            }
+        }
+    }
+    .skills {
+        .skills-content {
+            &__using {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            &__learning {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .form {
+        &__content {
+            width: 80%;
+        }
+    }
+    .bg {
+        &__image {
+            img {
+                display: none;
+            }
+        }
+        &__infos {
+            h1 {
+                line-height: 80px;
+            }
+        }
+    }
+    .it_berries {
+        padding: 50px 40px;
+    }
+    .skills {
+        .skills-content {
+            padding: 20px;
+            &__using {
+                grid-template-columns: 1fr 1fr;
+            }
+            &__learning {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+    .bg__infos p,
+    .bg__infos h1,
+    .bg__infos span {
+        padding-left: 25px;
+    }
+    .about-me__title,
+    .skills__title,
+    .form__title {
+        padding: 15px 50px;
+    }
+}

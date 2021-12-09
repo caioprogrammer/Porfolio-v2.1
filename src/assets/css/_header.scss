@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $dark-black;
+    position: sticky;
+    &__logo {
+        width: 50%;
+        background: $light-grey;
+        clip-path: polygon(0 0, 95% 0%, 100% 100%, 0% 100%);
+        display: flex;
+        justify-content: center;
+    }
+    &__menu {
+        width: 50%;
+        ul {
+            display: flex;
+            list-style: none;
+            grid-gap: 25px;
+            li {
+                padding: 15px 25px;
+                border-radius: 40px;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    background: $white;
+                    content: "";
+                    bottom: 0;
+                    left: 0;
+                    transition: width ease .3s;
+                }
+                &:hover::after {
+                    width: 100%;
+                }
+                &:last-child {
+                    background: $white;
+                    transition: background ease .4s;
+                    a {
+                        color: $dark-black;
+                        text-transform: uppercase;
+                    }
+                    &:hover {
+                        background: #000;
+                        a {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            li a {
+                color: $white;
+                font-family: 'Montserrat', times;
+                font-size: 16px;
+                text-decoration: none;
+                font-weight: 700;
+            }
+        }
+    }
+}

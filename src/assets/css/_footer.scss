@@ -1,0 +1,34 @@
+.footer {
+    background: $medium-black;
+    color: $white;
+    padding: 25px;
+    &__to-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Montserrat', times;
+        font-weight: 700;
+        font-family: 14px;
+        letter-spacing: 0.19em;
+        text-transform: uppercase;
+        line-height: 35px;
+        cursor: pointer;
+    }
+    .social-links-footer {
+        display: flex;
+        grid-gap: 25px;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    span {
+        font-family: 'Advent Pro';
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        strong {
+            font-weight: 700;
+        }
+    }
+}

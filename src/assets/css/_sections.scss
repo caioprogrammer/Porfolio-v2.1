@@ -1,0 +1,179 @@
+.bg {
+    display: flex;
+    position: relative;
+    background: $dark-black;
+    &__image {
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            max-width: 550px;
+        }
+    }
+    &__infos {
+        background: $light-grey;
+        height: 100%;
+        width: 50%;
+        clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p,
+        h1,
+        span {
+            font-family: 'Raleway', times;
+            padding-left: 80px;
+        }
+        p,
+        h1 {
+            font-weight: 700;
+        }
+        p {
+            font-size: 36px;
+        }
+        h1 {
+            font-size: 72px;
+            line-height: 150px;
+        }
+        span {
+            font-size: 24px;
+            font-weight: 900;
+            color: $medium-grey;
+        }
+    }
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    grid-gap: 15px;
+    width: 50%;
+    margin-top: 50px;
+    a {
+        background: $light-grey;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.it_berries {
+    background: #1D1D1D;
+    color: #fff;
+    padding: 50px 100px;
+    h2 {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Open Sans';
+        max-width: 1100px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    a {
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+}
+
+.about-me {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+        font-size: 28px;
+        font-family: 'Montserrat', times;
+        font-weight: 700;
+        border: 5px solid $dark-black;
+        padding: 15px 100px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Open Sans';
+        max-width: 420px;
+        text-align: center;
+    }
+}
+
+.skills {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+        font-size: 28px;
+        font-family: 'Montserrat', times;
+        font-weight: 700;
+        border: 5px solid $dark-black;
+        padding: 15px 100px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Open Sans';
+        max-width: 420px;
+        text-align: center;
+    }
+    .skills-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        h3 {
+            font-family: 'Montserrat';
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+        &__using,
+        &__learning {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 40px 60px;
+            margin-bottom: 50px;
+            .skill {
+                display: flex;
+                flex-direction: column;
+                grid-gap: 10px;
+                align-items: center;
+                justify-content: space-between;
+                span {
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+.shadow-inset {
+    box-shadow: 0px 0px 230px rgb(26 21 21 / 25%) inset;
+}
