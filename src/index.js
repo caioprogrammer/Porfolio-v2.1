@@ -12,3 +12,4 @@ import lgn_logo from './assets/images/lgn-logo.png';
 
 import './assets/js/_1_sliding-panels';
 import './assets/js/scrollTop';
+import './assets/js/_1_new-slider';
